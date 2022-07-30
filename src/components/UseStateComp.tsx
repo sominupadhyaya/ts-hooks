@@ -3,14 +3,19 @@ import {useState } from 'react'
 
 const UseStateComp = () =>{
     const [arr, arrSet] = useState<number[]>([])
-    const [name, nameSet] = useState(null)
+    const [name, nameSet] = useState<string | null>(null)
     return (
-    <div>
+    <>
         <div>
             <button onClick={() => arrSet([...arr, arr.length + 1])}>add items to array</button>
-            {JSON.stringify(arr)}
+            <div>{JSON.stringify(arr)}</div>
         </div>
-    </div>
+        <br /><br /><br /><br /><br />
+        <div>
+            <button onClick={() => nameSet("somin")}>set name</button>
+            <div>{JSON.stringify(name)}</div>
+        </div>
+    </>
     )
 }
 export default UseStateComp
