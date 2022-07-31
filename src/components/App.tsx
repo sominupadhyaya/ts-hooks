@@ -1,6 +1,8 @@
 import UseStateComp from "./UseStateComp";
-import UseEffectComp from './UseEffectComp'
+// import UseEffectComp from './UseEffectComp'
+import UseContextComp from "./UseContextComp";
 const App = () => {
+
   return (
     <>
      <div>
@@ -11,7 +13,11 @@ const App = () => {
      <h1>
       useEffect
     </h1>
-    <UseEffectComp/>
+      {/* <UseEffectComp/>  doing this so that the laptop doesnt break*/} 
+      <h1>
+        UseContext
+      </h1>
+        <UseContextComp />
      </div>
     </>
   );
