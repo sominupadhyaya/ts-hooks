@@ -1,4 +1,5 @@
 import UseStateComp from "./UseStateComp";
+import UseEffectComp from './UseEffectComp'
 function App() {
   return (
     <>
@@ -7,6 +8,10 @@ function App() {
       useState
      </h1>
      <UseStateComp/>
+     <h1>
+      useEffect
+    </h1>
+    <UseEffectComp/>
      </div>
     </>
   );

@@ -1,6 +1,5 @@
 import {useState } from 'react'
 
-
 const UseStateComp = () =>{
     const [arr, arrSet] = useState<number[]>([])
     const [name, nameSet] = useState<string | null>(null)
@@ -15,6 +14,7 @@ const UseStateComp = () =>{
             <button onClick={() => nameSet("somin")}>set name</button>
             <div>{JSON.stringify(name)}</div>
         </div>
+        
     </>
     )
 }
