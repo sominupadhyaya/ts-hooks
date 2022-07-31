@@ -1,6 +1,6 @@
 import UseStateComp from "./UseStateComp";
 import UseEffectComp from './UseEffectComp'
-function App() {
+const App = () => {
   return (
     <>
      <div>
